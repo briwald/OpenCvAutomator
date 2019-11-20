@@ -129,6 +129,14 @@ namespace OpenCvAutomator
         }
 
         /// <summary>
+        /// Right clicks the mouse at the current location
+        /// </summary>
+        public void RightClick()
+        {
+            mouse.RightButtonClick();
+        }
+
+        /// <summary>
         /// Right clicks the mouse on an image if it exists on screen
         /// </summary>
         /// <param name="filename">image file path</param>
@@ -148,6 +156,14 @@ namespace OpenCvAutomator
         }
 
         /// <summary>
+        /// Left clicks the mouse at the current location 
+        /// </summary>
+        public void Click()
+        {
+            mouse.LeftButtonClick();
+        }
+
+        /// <summary>
         /// Left clicks the mouse on an image if it exists on screen
         /// </summary>
         /// <param name="filename">image file path</param>
@@ -164,6 +180,14 @@ namespace OpenCvAutomator
                 currentScreenshotImage.Save("failure_" + GetTimestamp(DateTime.Now) + ".png");
                 throw e;
             }
+        }
+
+        /// <summary>
+        /// Double clicks the mouse at the current location
+        /// </summary>
+        public void DoubleClick()
+        {
+            mouse.LeftButtonDoubleClick();
         }
 
         /// <summary>
