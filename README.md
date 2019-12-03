@@ -2,7 +2,7 @@
 A C# library to perform Windows automation using OpenCV computer vision.
 
 It uses OpenCV (Emgu.CV) for the computer vision functionality and WindowsInput to control the mouse and keyboard. It's very 
-similar to Sikuli, but doesn't use Java/Jython and it doesn't have an IDE to generate its scripts. You simply pass image 
+similar to [SikuliX1](https://github.com/RaiMan/SikuliX1 "SikuliX1"), but doesn't use Java/Jython and it doesn't have an IDE to generate its scripts. You simply pass image 
 file paths to the methods that accept them. I've only tested using paths relative to the library itself, but it is likely that 
 absolute paths will also work. 
 
